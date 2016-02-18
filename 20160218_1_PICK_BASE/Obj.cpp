@@ -20,7 +20,7 @@ void Obj::Initialize(char* mapFileName, char* groundFileName /*= nullptr*/)
 	{
 		ObjLoader::LoadObj_OnlyVertex(objGround, groundFileName);
 	}
-
+	printf_s("test -> %d\n", objGround.size());
 	D3DXMatrixIdentity(&world);
 }
 

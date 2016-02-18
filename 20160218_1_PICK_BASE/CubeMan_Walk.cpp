@@ -21,6 +21,8 @@ void CubeMan_Walk::Update()
 {
 	GameObject::Update();
 
+	walkingMap->GroundCheck(position);
+
 	float tick = (float)GameManager::GetTick();
 	jumpTime += tick;
 
@@ -87,6 +89,7 @@ void CubeMan_Walk::Update()
 	{
 		isJumping = true;
 		jumpTime = 0.0f;
+		jumpStart = position.y;
 	}
 
 	D3DXMATRIX scale, rotation, translation;
@@ -102,11 +105,10 @@ void CubeMan_Walk::Update()
 	{
 		position.y = jumpStart + jumpPower * jumpTime - 4.9f/*0.5f * ( 9.8f ) */* jumpTime * jumpTime;
 
-		if (position.y < 0.0f)
+		if (position.y < jumpStart)
 		{
 			isJumping = false;
-			jumpStart = 0.0f;
-			position.y = 0.0f;
+			jumpStart = position.y;
 		}
 	}
 
