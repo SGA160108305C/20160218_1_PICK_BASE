@@ -13,7 +13,7 @@ public:
 	~ObjLoader();
 
 	static void LoadObjFileData(OUT std::vector<ObjFileGroup*>& group, char* fileName);
-
+	static void LoadObj_OnlyVertex(OUT std::vector<D3DXVECTOR3>& vertex, char* fileName);
 
 private:
 

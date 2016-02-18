@@ -19,7 +19,7 @@ void GameStateManager::Initialize()
 	gameStates[GameStateType::STATE_HIERARCHY_ANIMATION] = new GameState_HierarchyAnimation;
 	gameStates[GameStateType::STATE_LIGHT] = new GameState_Light;
 	gameStates[GameStateType::STATE_OBJ_LOAD] = new GameState_OBJ_Load;
-	gameStates[GameStateType::STATE_PICK_BASE] = nullptr;
+	gameStates[GameStateType::STATE_PICK_BASE] = new GameState_Picking;
 	gameStates[GameStateType::STATE_VERTEX_BUFFER] = nullptr;	
 	gameStates[GameStateType::STAET_ASE_LOAD] = nullptr;
 	gameStates[GameStateType::STATE_ACTIONS] = nullptr;
@@ -35,7 +35,7 @@ void GameStateManager::Initialize()
 	gameStates[GameStateType::STATE_SHADER] = nullptr;
 	gameStates[GameStateType::STATE_THREAD] = nullptr;
 	
-	currentState = GameStateType::STATE_OBJ_LOAD;
+	currentState = GameStateType::STATE_PICK_BASE;
 	gameStates[currentState]->OnEnterState();
 }
 

@@ -240,3 +240,8 @@ void ObjLoader::LoadMtlFileData(OUT std::map<std::string, MaterialTexture*>& mat
 		fclose(fp);
 	}
 }
+
+void ObjLoader::LoadObj_OnlyVertex(OUT std::vector<D3DXVECTOR3>& vertex, char* fileName)
+{
+
+}

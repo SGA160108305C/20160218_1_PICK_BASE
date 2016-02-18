@@ -6,6 +6,7 @@
 #include "GameState_HierarchyAnimation.h"
 #include "GameState_Light.h"
 #include "GameState_OBJ_Load.h"
+#include "GameState_Picking.h"
 
 
 enum GameStateType

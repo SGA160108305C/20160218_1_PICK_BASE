@@ -89,6 +89,7 @@
     <ClCompile Include="CubeManParts.cpp" />
     <ClCompile Include="CubeManParts_Light.cpp" />
     <ClCompile Include="CubeMan_Light.cpp" />
+    <ClCompile Include="CubeMan_Walk.cpp" />
     <ClCompile Include="Cube_Material.cpp" />
     <ClCompile Include="Cube_Texture.cpp" />
     <ClCompile Include="GameManager.cpp" />
@@ -98,6 +99,7 @@
     <ClCompile Include="GameState_HierarchyAnimation.cpp" />
     <ClCompile Include="GameState_Light.cpp" />
     <ClCompile Include="GameState_OBJ_Load.cpp" />
+    <ClCompile Include="GameState_Picking.cpp" />
     <ClCompile Include="GameState_Texture.cpp" />
     <ClCompile Include="Grid.cpp" />
     <ClCompile Include="main.cpp" />
@@ -115,6 +117,7 @@
     <ClInclude Include="CubeManParts.h" />
     <ClInclude Include="CubeManParts_Light.h" />
     <ClInclude Include="CubeMan_Light.h" />
+    <ClInclude Include="CubeMan_Walk.h" />
     <ClInclude Include="Cube_Material.h" />
     <ClInclude Include="Cube_Texture.h" />
     <ClInclude Include="FVF.h" />
@@ -127,6 +130,7 @@
     <ClInclude Include="GameState_HierarchyAnimation.h" />
     <ClInclude Include="GameState_Light.h" />
     <ClInclude Include="GameState_OBJ_Load.h" />
+    <ClInclude Include="GameState_Picking.h" />
     <ClInclude Include="GameState_Texture.h" />
     <ClInclude Include="Grid.h" />
     <ClInclude Include="MaterialTexture.h" />
