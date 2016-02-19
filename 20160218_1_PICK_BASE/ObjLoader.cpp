@@ -255,6 +255,7 @@ void ObjLoader::LoadObj_OnlyVertex(OUT std::vector<D3DXVECTOR3>& vertex, char* f
 	{
 		while (!feof(fp))
 		{
+			vertex.clear();
 			char tempBuffer[1024];
 			fgets(tempBuffer, 1024, fp);
 			//OutputDebugString(tempBuffer);
